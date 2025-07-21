@@ -1,9 +1,18 @@
 pipeline {
-    agent any
+    agent any {  
+    }
+    // environmental block
+    environment {
+        //key = value > ${key}
+        name = "siva"
+        course = "devops engineer program"
+    }
     stages {
-        stage("hello"){
-            steps{
-                echo "hello from jenkins pipeline"
+        stage ('firstStage'){
+            steps {
+                echo "welcome ${name}"
+                echo "you enrolled to ${course}"
+
             }
         }
     }
