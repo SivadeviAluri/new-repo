@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage ('firstStage'){
             steps {
-                echo "welcome ${name}"
+                echo "welcomhhe ${name}"
                 echo "you enrolled to ${course}"
 
             }
